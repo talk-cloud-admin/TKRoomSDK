@@ -1,0 +1,11 @@
+framework module TKRoomSDK {
+  umbrella header "TKRoomSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module TKRoomSDK.Swift {
+    header "TKRoomSDK-Swift.h"
+    requires objc
+}

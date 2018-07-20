@@ -1,0 +1,8 @@
+/* 
+  Localizable.strings
+  talkSDKDemo
+
+  Created by lyy on 2018/4/10.
+  Copyright © 2018年 beijing. All rights reserved.
+*/
+"Prompt.show" = "Waiting for publish your video and audio...";

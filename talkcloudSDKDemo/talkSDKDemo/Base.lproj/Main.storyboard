@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" placeholder="输入角色" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="MK2-Gp-8p7">
+                                <rect key="frame" x="100" y="258.5" width="225" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xUD-gz-79C"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="角色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vcj-nl-qCx">
+                                <rect key="frame" x="50" y="273" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-U8-2ag">
+                                <rect key="frame" x="50" y="337" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入密码" textAlignment="natural" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-YV-U80">
+                                <rect key="frame" x="100" y="322.5" width="225" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ovV-Oi-734"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="房间号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7w-0Q-Lfe">
+                                <rect key="frame" x="33" y="211" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="402498801" borderStyle="roundedRect" placeholder="输入房间号" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="UQB-eg-mxS">
+                                <rect key="frame" x="100" y="196.5" width="225" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="seW-Ed-aDy"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txn-Go-bIf">
+                                <rect key="frame" x="131.5" y="440" width="112.5" height="63"/>
+                                <color key="backgroundColor" red="0.73433393239974976" green="0.084201654074899671" blue="0.10256558560177997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="EGS-ge-hsk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="加入">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onClickedStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfA-dI-1bp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MK2-Gp-8p7" secondAttribute="trailing" constant="50" id="07N-Mx-T9b"/>
+                            <constraint firstItem="MK2-Gp-8p7" firstAttribute="leading" secondItem="vcj-nl-qCx" secondAttribute="trailing" constant="15" id="3a7-xU-PpY"/>
+                            <constraint firstItem="s7w-0Q-Lfe" firstAttribute="trailing" secondItem="vcj-nl-qCx" secondAttribute="trailing" id="4Dw-6S-nOK"/>
+                            <constraint firstItem="Nrg-U8-2ag" firstAttribute="top" secondItem="vcj-nl-qCx" secondAttribute="bottom" constant="43" id="Gvd-Hz-GNA"/>
+                            <constraint firstItem="7nf-YV-U80" firstAttribute="centerY" secondItem="Nrg-U8-2ag" secondAttribute="centerY" id="HbT-iS-7BB"/>
+                            <constraint firstItem="txn-Go-bIf" firstAttribute="width" secondItem="7nf-YV-U80" secondAttribute="width" multiplier="1/2" id="I0h-fO-WYf"/>
+                            <constraint firstItem="txn-Go-bIf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jo1-Y7-F9X"/>
+                            <constraint firstItem="txn-Go-bIf" firstAttribute="top" secondItem="7nf-YV-U80" secondAttribute="bottom" constant="67.5" id="Mcp-y8-BdT"/>
+                            <constraint firstItem="UQB-eg-mxS" firstAttribute="centerY" secondItem="s7w-0Q-Lfe" secondAttribute="centerY" id="Qm6-Wp-Z6e"/>
+                            <constraint firstItem="vcj-nl-qCx" firstAttribute="centerY" secondItem="MK2-Gp-8p7" secondAttribute="centerY" id="VYD-j2-vYb"/>
+                            <constraint firstAttribute="trailing" secondItem="UQB-eg-mxS" secondAttribute="trailing" constant="50" id="Va7-GC-wmv"/>
+                            <constraint firstAttribute="trailing" secondItem="7nf-YV-U80" secondAttribute="trailing" constant="50" id="WDX-nN-aBJ"/>
+                            <constraint firstItem="Nrg-U8-2ag" firstAttribute="trailing" secondItem="vcj-nl-qCx" secondAttribute="trailing" id="YfY-PI-wyA"/>
+                            <constraint firstItem="MK2-Gp-8p7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="bK9-WV-tEn"/>
+                            <constraint firstItem="7nf-YV-U80" firstAttribute="leading" secondItem="Nrg-U8-2ag" secondAttribute="trailing" constant="15" id="dcb-ub-v39"/>
+                            <constraint firstItem="vcj-nl-qCx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="gNr-tw-z6d"/>
+                            <constraint firstItem="vcj-nl-qCx" firstAttribute="top" secondItem="s7w-0Q-Lfe" secondAttribute="bottom" constant="41" id="nWg-7c-Tdp"/>
+                            <constraint firstItem="UQB-eg-mxS" firstAttribute="leading" secondItem="s7w-0Q-Lfe" secondAttribute="trailing" constant="15" id="qa2-xB-hz4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pd1-Jh-oTz"/>
+                    <connections>
+                        <outlet property="password" destination="7nf-YV-U80" id="5U2-4B-cuF"/>
+                        <outlet property="role" destination="MK2-Gp-8p7" id="o32-e2-0bx"/>
+                        <outlet property="roomId" destination="UQB-eg-mxS" id="B9G-GV-wmc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4410" y="-645"/>
+        </scene>
+    </scenes>
+</document>
