@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "MIT (example)"
-   s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/talk-cloud/TKRoomSDK.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/talk-cloud/TKRoomSDK.git", :tag => "v#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = 'TKRoomSDK.framework'
+  s.vendored_frameworks = 'sdk/libs/TKRoomSDK.framework'
   # s.public_header_files = "Classes/**/*.h"
 
 
