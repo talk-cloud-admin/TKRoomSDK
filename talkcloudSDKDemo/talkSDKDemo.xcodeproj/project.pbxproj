@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		587D8C022101847E00C08F32 /* TKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587D8C012101847E00C08F32 /* TKRoomSDK.framework */; };
+		587D8C852105ADDD00C08F32 /* TKRoomSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 587D8C842105ADDD00C08F32 /* TKRoomSDK.framework */; };
 		58A0756020EF86C300658C1C /* VideosBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A0755F20EF86C300658C1C /* VideosBlock.m */; };
 		58C9D52E20FC8A64000376C1 /* TKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C9D52C20FC8A64000376C1 /* TKTableViewCell.m */; };
 		58C9D52F20FC8A64000376C1 /* TKTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C9D52D20FC8A64000376C1 /* TKTableViewCell.xib */; };
@@ -72,7 +72,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		587D8C012101847E00C08F32 /* TKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TKRoomSDK.framework; sourceTree = "<group>"; };
+		587D8C812101DF8700C08F32 /* talkSDKDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = talkSDKDemo.entitlements; sourceTree = "<group>"; };
+		587D8C842105ADDD00C08F32 /* TKRoomSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TKRoomSDK.framework; sourceTree = "<group>"; };
 		58A0755E20EF86C300658C1C /* VideosBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideosBlock.h; sourceTree = "<group>"; };
 		58A0755F20EF86C300658C1C /* VideosBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideosBlock.m; sourceTree = "<group>"; };
 		58C9D52B20FC8A64000376C1 /* TKTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTableViewCell.h; sourceTree = "<group>"; };
@@ -157,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587D8C022101847E00C08F32 /* TKRoomSDK.framework in Frameworks */,
+				587D8C852105ADDD00C08F32 /* TKRoomSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +182,7 @@
 		587D8BFD21008D0E00C08F32 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				587D8C012101847E00C08F32 /* TKRoomSDK.framework */,
+				587D8C842105ADDD00C08F32 /* TKRoomSDK.framework */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -208,6 +209,7 @@
 		5E2C93401F023D26005D4300 /* talkSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				587D8C812101DF8700C08F32 /* talkSDKDemo.entitlements */,
 				587D8BFD21008D0E00C08F32 /* lib */,
 				8469F8CF20FCA1DE00E231D2 /* Vendor */,
 				685826DB207E083600734E43 /* Views */,
@@ -417,6 +419,12 @@
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
 							};
 						};
 					};

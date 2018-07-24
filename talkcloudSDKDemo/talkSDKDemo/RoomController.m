@@ -164,6 +164,12 @@ typedef void (^ButtonAction)(UIButton* button);
                            @{@"imageNomal":[UIImage imageNamed:@"AV"],
                              @"imageSelect":[UIImage imageNamed:@"onlyAudio"],
                              @"block":^(UIButton* button){
+                                 [_roomMgr getRoomUserNumberWithRole:@[] search:@"i" callback:^(NSInteger num, NSError * _Nonnull error) {
+                                     
+                                 }];
+                                 [_roomMgr getRoomUsersWithRole:@[] startIndex:0 maxNumber:200 search:@"" order:@{@"ts":@"asc"} callback:^(NSArray<TKRoomUser *> * _Nonnull users, NSError * _Nonnull error) {
+                                     
+                                 }];
                                  //切换纯音频3
                                  if (button.selected) {
                                      _timerCount = 0;
@@ -738,6 +744,11 @@ typedef void (^ButtonAction)(UIButton* button);
     NSLog(@"roomManagerUserPublished %@", peerID);
     //第三步  播放发布音视频的用户
     TKRoomUser *user = [_roomMgr getRoomUserWithUId:peerID];
+    if (state > 0) {
+        [_userDic setObject:user forKey:peerID];
+    } else {
+        [_userDic removeObjectForKey:peerID];
+    }
     switch (state) {
         case TKUser_PublishState_NONE:
             [self unPlayAudio:peerID];

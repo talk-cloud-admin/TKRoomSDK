@@ -222,7 +222,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param role 用户角色
  @param callback 人数的callBack
  */
-- (int)getRoomUserNumberWithRole:(NSArray * _Nullable)role callback:(void (^)(NSInteger num, NSError *_Nullable error))callback;
+- (int)getRoomUserNumberWithRole:(NSArray * _Nullable)role search:(NSString * _Nullable)search callback:(void (^)(NSInteger num, NSError *error))callback;
 
 /**
  大规模教室时获取房间用户信息（用户列表）
@@ -232,7 +232,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param max 需要获取的人数
  @param callback 获取到的用户信息callback
  */
-- (int)getRoomUsersWithRole:(NSArray * _Nullable)role startIndex:(NSInteger)start maxNumber:(NSInteger)max search:(NSString *)search order:(NSDictionary *)order callback:(void (^)(NSArray <TKRoomUser *>* _Nonnull users , NSError *error) )callback;
+- (int)getRoomUsersWithRole:(NSArray * _Nullable)role startIndex:(NSInteger)start maxNumber:(NSInteger)max search:(NSString * _Nullable)search order:(NSDictionary * _Nullable)order callback:(void (^)(NSArray <TKRoomUser *>* _Nonnull users , NSError *error) )callback;
 
 /**
  设置视频分辨率
